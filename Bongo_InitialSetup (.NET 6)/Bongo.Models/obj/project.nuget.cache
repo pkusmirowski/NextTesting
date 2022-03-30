@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LGvWlmu0wwhoGyYG6bbex6JusY4YyugKDlWrboLeIp4+HsHZZuPS7nRUH5+SImXWS6JlT0GQBvxvg1NeJRPrWg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Paweł\\source\\repos\\NextTesting\\Bongo_InitialSetup (.NET 6)\\Bongo.Models\\Bongo.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Paweł\\.nuget\\packages\\roslynator.analyzers\\4.0.2\\roslynator.analyzers.4.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
