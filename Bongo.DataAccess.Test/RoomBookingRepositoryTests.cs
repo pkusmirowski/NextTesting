@@ -40,7 +40,6 @@ namespace Bongo.DataAccess
             };
         }
 
-
         [SetUp]
         public void Setup()
         {

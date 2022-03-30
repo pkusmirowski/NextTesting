@@ -19,10 +19,7 @@ namespace Bongo.DataAccess.Migrations
                     Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_StudyRoomBookings", x => x.BookingId);
-                });
+                constraints: table => table.PrimaryKey("PK_StudyRoomBookings", x => x.BookingId));
 
             migrationBuilder.CreateTable(
                 name: "StudyRooms",
@@ -33,10 +30,7 @@ namespace Bongo.DataAccess.Migrations
                     RoomNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RoomName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_StudyRooms", x => x.Id);
-                });
+                constraints: table => table.PrimaryKey("PK_StudyRooms", x => x.Id));
 
             migrationBuilder.InsertData(
                 table: "StudyRooms",

@@ -16,8 +16,8 @@ namespace Bongo.Web
     [TestFixture]
     public class RoomBookingControllerTests
     {
-        private Mock<IStudyRoomBookingService> _studyRoomBookingService;
-        private RoomBookingController _bookingController;
+        private Mock<IStudyRoomBookingService> _studyRoomBookingService = null!;
+        private RoomBookingController _bookingController = null!;
 
         [SetUp]
         public void SetUp()
@@ -49,7 +49,8 @@ namespace Bongo.Web
             _studyRoomBookingService.Setup(x => x.BookStudyRoom(It.IsAny<StudyRoomBooking>())).Returns(new StudyRoomBookingResult()
             {
                 Code = StudyRoomBookingCode.NoRoomAvailable
-            });         
+            });
+
             var result = _bookingController.Book(new StudyRoomBooking());
             Assert.IsInstanceOf<ViewResult>(result);
             ViewResult viewResult = (ViewResult)result;

@@ -17,6 +17,12 @@ namespace Bongo.Web.Controllers
             _logger = logger;
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is HomeController controller &&
+                   EqualityComparer<ILogger<HomeController>>.Default.Equals(_logger, controller._logger);
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -25,6 +31,11 @@ namespace Bongo.Web.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
     }
 }

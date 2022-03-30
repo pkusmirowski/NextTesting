@@ -11,6 +11,5 @@ namespace Bongo.DataAccess.Repository.IRepository
     {
         void Book(StudyRoomBooking booking);
         IEnumerable<StudyRoomBooking> GetAll(DateTime? dateTime);
-        
     }
 }
