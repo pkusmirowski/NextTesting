@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IPyuVWTcO+/3qom4+lfG9jtmpHpM6zP1igW0AfxpZ5esI+jyzmOSnMZo4IrlNPfeAi+AXix5NnmoMKTwR1NnYg==",
+  "dgSpecHash": "Q2xf0npZ0dlAJvbzFOBtwzKaEtDoGdY7YpPCNBlTvyZ+mwc5EG5fKnUDFwwDXHYFCnL0zxCRt4mKMlPhXV7LYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Paweł\\source\\repos\\NextTesting\\Bongo_InitialSetup (.NET 6)\\Bongo.Core\\Bongo.Core.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Paweł\\.nuget\\packages\\roslynator.analyzers\\4.0.2\\roslynator.analyzers.4.0.2.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\roslynator.analyzers\\4.1.1\\roslynator.analyzers.4.1.1.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

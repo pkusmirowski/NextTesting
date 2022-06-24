@@ -1,10 +1,6 @@
 ﻿using Bongo.Models.ModelValidations;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bongo.Models.Model.VM
 {
@@ -26,7 +22,5 @@ namespace Bongo.Models.Model.VM
         [DataType(DataType.Date)]
         [DateInFuture]
         public DateTime Date { get; set; }
-
-        
     }
 }

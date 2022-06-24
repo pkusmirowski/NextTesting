@@ -5,11 +5,6 @@ using Bongo.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bongo.Web
 {
@@ -30,7 +25,7 @@ namespace Bongo.Web
         public void IndexPage_CallRequest_VerifyGetAllInvoked()
         {
             _bookingController.Index();
-            _studyRoomBookingService.Verify(x=>x.GetAllBooking(), Times.Once());
+            _studyRoomBookingService.Verify(x => x.GetAllBooking(), Times.Once());
         }
 
         [Test]

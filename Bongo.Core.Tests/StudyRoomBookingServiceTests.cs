@@ -4,11 +4,6 @@ using Bongo.Models.Model;
 using Bongo.Models.Model.VM;
 using Moq;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bongo.Core
 {
@@ -70,13 +65,13 @@ namespace Bongo.Core
         public void StudyRoomBooking_SaveBookingWithAvailableRoom_RetrunsResultWithAllValues()
         {
             StudyRoomBooking? savedStudyRoomBooking = null;
-            _studyRoomBookingRepoMock.Setup(x => x.Book(It.IsAny<StudyRoomBooking>())).Callback<StudyRoomBooking> (booking => savedStudyRoomBooking = booking);
+            _studyRoomBookingRepoMock.Setup(x => x.Book(It.IsAny<StudyRoomBooking>())).Callback<StudyRoomBooking>(booking => savedStudyRoomBooking = booking);
 
             //act
             _bookingService.BookStudyRoom(_request);
 
             //assert
-            _studyRoomBookingRepoMock.Verify(x=>x.Book(It.IsAny<StudyRoomBooking>()), Times.Once);
+            _studyRoomBookingRepoMock.Verify(x => x.Book(It.IsAny<StudyRoomBooking>()), Times.Once);
             Assert.IsNotNull(savedStudyRoomBooking);
             if (savedStudyRoomBooking != null)
             {
@@ -103,7 +98,7 @@ namespace Bongo.Core
         [TestCase(false, ExpectedResult = StudyRoomBookingCode.NoRoomAvailable)]
         public StudyRoomBookingCode ResultCodeSuccess_RoomAvability_ReturnSuccessResultCode(bool roomAvailibility)
         {
-            if(!roomAvailibility)
+            if (!roomAvailibility)
             {
                 _availableStudyRoom.Clear();
             }
@@ -114,7 +109,7 @@ namespace Bongo.Core
         [TestCase(50, true)]
         public void StudyRoomBooking_BookRoomWithAvailability_RetrunsBookingId(int expected, bool roomAvaibility)
         {
-            if(!roomAvaibility)
+            if (!roomAvaibility)
             {
                 _availableStudyRoom.Clear();
             }

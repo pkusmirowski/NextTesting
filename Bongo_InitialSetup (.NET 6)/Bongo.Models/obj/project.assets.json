@@ -2,16 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Roslynator.Analyzers/4.0.2": {
+      "Roslynator.Analyzers/4.1.1": {
         "type": "package"
       }
     }
   },
   "libraries": {
-    "Roslynator.Analyzers/4.0.2": {
-      "sha512": "UmKLY06/yIAAkARvvGHjIS5LA0XEeEn7pbRHmsDcxvbLFla2fqrTTPVBUW7HMttBAwFi2WKvkVzGNu3/0JDdxA==",
+    "Roslynator.Analyzers/4.1.1": {
+      "sha512": "3cPVlrB1PytlO1ztZZBOExDKQWpMZgI15ZDa0BqLu0l6xv+xIRfEpqjNRcpvUy3aLxWTkPgSKZbbaO+VoFEJ1g==",
       "type": "package",
-      "path": "roslynator.analyzers/4.0.2",
+      "path": "roslynator.analyzers/4.1.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -24,8 +24,9 @@
         "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Core.dll",
         "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
         "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "docs/README.md",
         "icon.png",
-        "roslynator.analyzers.4.0.2.nupkg.sha512",
+        "roslynator.analyzers.4.1.1.nupkg.sha512",
         "roslynator.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
@@ -34,7 +35,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Roslynator.Analyzers >= 4.0.2"
+      "Roslynator.Analyzers >= 4.1.1"
     ]
   },
   "packageFolders": {
@@ -85,7 +86,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[4.0.2, )"
+            "version": "[4.1.1, )"
           }
         },
         "imports": [
@@ -103,7 +104,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,10 +1,5 @@
 ﻿using Bongo.Models.Model;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bongo.DataAccess
 {
@@ -21,9 +16,9 @@ namespace Bongo.DataAccess
             modelBuilder.Entity<StudyRoom>().HasData(
                 new StudyRoom
                 {
-                    Id=1,
-                    RoomName="Everest",
-                    RoomNumber="A101"
+                    Id = 1,
+                    RoomName = "Everest",
+                    RoomNumber = "A101"
                 }
             );
             modelBuilder.Entity<StudyRoom>().HasData(
